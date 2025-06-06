@@ -1,0 +1,121 @@
+/* Definições globais e body */
+body {
+    font-family: Garamond, serif; /* Usando Garamond */
+    margin: 0;
+    background-color: #F9F1DC; /* Cor amarela clara para o fundo [cite: 1] */
+    color: #333; /* Uma cor de texto escura padrão */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo principal */
+}
+
+/* Cabeçalho */
+.main-header {
+    text-align: center;
+    padding-top: 3em; /* Ajuste o padding  */
+    padding-bottom: 2em; /* Ajuste o padding  */
+}
+
+.main-header .logo {
+    width: 80px; /* Ajuste o tamanho do logo */
+    height: auto;
+    display: block; /* Garante que o logo ocupe sua própria linha */
+    margin: 0 auto; /* Centraliza o logo */
+}
+
+.site-title {
+    font-size: 3em; /* Tamanho do título "Raw" */
+    margin: 0.2em 0 0.1em;
+    color: #F5BD26; /* Cor amarela principal [cite: 1] */
+}
+
+.site-subtitle {
+    font-size: 1em;
+    margin: 0;
+    letter-spacing: 0.1em;
+    color: #555;
+}
+
+/* Conteúdo principal */
+.main-content {
+    width: 100%; /* Ocupa a largura total para centralizar */
+    max-width: 960px; /* Largura máxima para o conteúdo como na interface */
+    text-align: center; /* Para centralizar o banner e a galeria */
+}
+
+/* Seção de destaque (banner) */
+.highlight-section {
+    margin-bottom: 30px; /* Espaço abaixo do banner */
+    border-top: 1px solid #F5BD26; /* Borda superior amarela [cite: 1] */
+    border-bottom: 1px solid #F5BD26; /* Borda inferior amarela [cite: 1] */
+    padding-top: 1em; /* Ajuste o padding conforme necessário */
+    padding-bottom: 1em; /* Ajuste o padding conforme necessário */
+}
+
+.highlight-image {
+    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    height: auto;
+    display: block; /* Remove espaçamento extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Seção da galeria */
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* 6 colunas, ajusta para telas menores */
+    gap: 15px; /* Espaçamento entre as imagens */
+    margin: 30px 0;
+    justify-items: center; /* Centraliza as imagens dentro das células da grade */
+}
+
+.gallery-item {
+    margin: 0; /* Remove margem padrão de figure */
+    padding: 0;
+    width: 100%; /* Faz a figura ocupar a largura da célula */
+    max-width: 150px; /* Limita o tamanho máximo de cada imagem */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border: 1px solid #ccc; /* Borda leve para as miniaturas */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Seção "O chef" */
+.chef-section {
+    margin: 50px auto; /* Centraliza e adiciona margem */
+    padding: 2em; /* Padding interno */
+    text-align: center;
+    max-width: 600px; /* Largura para o texto */
+    border-top: 1px solid #F5BD26; /* Borda superior amarela [cite: 1] */
+    border-bottom: 1px solid #F5BD26; /* Borda inferior amarela [cite: 1] */
+    padding-left: 2em; /* Ajuste o padding conforme necessário */
+    padding-right: 2em; /* Ajuste o padding conforme necessário */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.chef-section h2 {
+    font-size: 1.8em;
+    color: #F5BD26; /* Cor amarela principal [cite: 1] */
+    margin-bottom: 0.8em;
+}
+
+.chef-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Rodapé */
+.main-footer {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 4em; /* Espaço acima do rodapé */
+    background-color: #F5BD26; /* Cor amarela principal para o rodapé [cite: 1] */
+    color: #fff; /* Texto branco no rodapé */
+    font-size: 0.9em;
+}
